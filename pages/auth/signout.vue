@@ -3,7 +3,12 @@
 </template>
 
 <script>
-export default {}
+export default {
+  name: 'SignOut',
+  async AsyncData() {
+    $nuxt.$fire.$auth.signOut();
+  },
+};
 </script>
 
 <style></style>
